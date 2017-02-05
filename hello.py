@@ -19,6 +19,8 @@ c=canvas.Canvas("output/data.pdf")
 
 
 def getdata():
+
+        #get data from the user
 	movie = raw_input("Please enter the name of the film: ")
 	
 	duration = raw_input("Please enter the duration of the film: ")
@@ -28,6 +30,7 @@ def getdata():
 	num = raw_input("Please enter the format of the file to be saved(1-plaintext,2-pdf,3-plugins): ")
         
         cont = raw_input("Do you want to continue(y|n): ")
+        #data is stored as a list objects of class node in samplelist
         newnode=node(movie,duration,stars,num)
         simplelist.append(newnode)
         print "\n\n"
@@ -38,6 +41,7 @@ def getdata():
              filetype()
        
 def filetype():
+        #this function sends each objects to the function to plain text,pdf and plugin based on the users choice
         global simplelist
         global c
         for ele in simplelist:
@@ -52,8 +56,9 @@ def filetype():
         c.save()
 
 def plaintxt(data):
+        #this fuction changes the data into a plain text and stores it in the output folder
         global i
-      
+        
         f=open("output/data.txt","a+")  
         f.write("Movie %d\r\n"%i)
         i=i+1
@@ -67,6 +72,7 @@ def plaintxt(data):
 
 
 def pdf(data):
+        #this function uses the library reportlab to convert the data into a pdf 
         global j
         global c
         c.drawString(3,800-((j-1)*50),"Movie %d"%j)
@@ -79,11 +85,13 @@ def pdf(data):
 
 def reflection(data):
         flag=0
+        #this function checks the plugin directory for plugins .if there is a plugin gets the name of the plugin and name of the plugin file name from the manifest file of the plugin.then this fuction sends store the data as aplain text in the plugin directory for the .The plugins can use this data as they like.  
         
         num=1
+        print "the available plugins are \n"
         for f in os.listdir("plugins/"):
              child=os.path.join("plugins/",f)     
-            
+             
              if os.path.exists(child+"/manifest.json"):
                  
                  flag=1

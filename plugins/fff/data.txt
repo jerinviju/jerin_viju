@@ -7,3 +7,6 @@ actors of the movie: ddd
 Name of the movie: jerin
 duration of the movie: djjd
 actors of the movie: djdjd
+Name of the movie: jerin
+duration of the movie: 3hrs
+actors of the movie: s

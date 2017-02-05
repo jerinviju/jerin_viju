@@ -34,3 +34,9 @@ actors of the movie: ddj
 Name of the movie: jdjdj
 duration of the movie: jdjjd
 actors of the movie: rgf
+Name of the movie: jerin
+duration of the movie: dff
+actors of the movie: sdf
+Name of the movie: jerin
+duration of the movie: 3
+actors of the movie: rdf
