@@ -1,0 +1,20 @@
+Movie 1
+Name of the movie: jerin
+duration of the movie: 2hrs
+actors of the movie: jerin
+
+Movie 2
+Name of the movie: shiny
+duration of the movie: 3
+actors of the movie: d
+
+Movie 1
+Name of the movie: jerin
+duration of the movie: h
+actors of the movie: d
+
+Movie 1
+Name of the movie: jerin
+duration of the movie: fff
+actors of the movie: fff
+
